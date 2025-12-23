@@ -72,7 +72,7 @@ Installation validated successfully!
 1. Open your web browser and log in to [Crunchyroll](https://www.crunchyroll.com)
 2. Open Developer Tools (F12 or Right Click → Inspect)
 3. Go to the **Network** tab
-4. Refresh the page and filter by "discover"
+4. Refresh the page and filter with "https://www.crunchyroll.com/accounts/v1/me"
 5. Click on any request and look at the **Request Headers**
 6. Find the `Authorization` header - copy its full value
    - Format: `Bearer eyJ...` (starts with "Bearer")
