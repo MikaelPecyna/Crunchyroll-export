@@ -13,7 +13,7 @@ This tool allows you to export your Crunchyroll account data including:
 
 All data is exported to CSV files for easy analysis, backup, or migration.
 
-TODO: Screenshot showing the CLI output after exporting watchlist
+![Screenshot showing the CLI output after exporting watchlist](assets/cli.png)
 
 ## Features
 
@@ -77,7 +77,7 @@ Installation validated successfully!
 6. Find the `Authorization` header - copy its full value
    - Format: `Bearer eyJ...` (starts with "Bearer")
 
-TODO: Screenshot showing browser DevTools with the Authorization header highlighted
+![Screenshot showing browser DevTools with the Authorization header highlighted](assets/devtool.png)
 
 ### Setting Up Your Token
 
@@ -197,7 +197,7 @@ G0DUMWM3W,On to the Next Target,episode,GDKHZEJ0K,25,Solo Leveling
 GG1UX5XMW,Are You the King of Humans,episode,GDKHZEJ0K,24,Solo Leveling
 ```
 
-TODO: Example screenshot of exported CSV opened in Excel
+![Example screenshot of exported CSV opened in Excel](assets/excel.png)
 
 ## Anime Title Enrichment
 
@@ -243,16 +243,6 @@ The tool uses UTF-8-sig encoding with automatic fallbacks. If you see garbled ch
 - Use Excel's "Import" feature instead of double-clicking
 - Try Google Sheets which handles UTF-8 natively
 
-### Module Not Found Errors
-
-```bash
-# Reinstall dependencies
-pip install --upgrade -r requirements.txt
-
-# Or install manually
-pip install requests python-dotenv
-```
-
 ## Original Project
 
 This is a **Python rewrite** of the original [Crunchyroll Export/Import List](https://github.com/Vryntel/Crunchyroll-Export-Import-List) project.
@@ -269,8 +259,7 @@ This version replaces the cloud-based solution with a **standalone Python CLI** 
 
 - Runs locally without Google Sheets dependency
 - Provides command-line interface for automation
-- Offers the same export/import functionality (import features removed in this version)
-- Maintains compatibility with the original CSV format
+- Offers the same export functionality (import features removed in this version)
 
 **Thank you** to Vryntel for the original project and reverse-engineering the Crunchyroll API!
 
